@@ -6,7 +6,7 @@
 #    By: mbaumgar <mbaumgar@student.42mulhouse.fr>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/17 15:23:09 by mbaumgar          #+#    #+#              #
-#    Updated: 2023/11/21 16:02:37 by mbaumgar         ###   ########.fr        #
+#    Updated: 2024/01/02 17:08:13 by mbaumgar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,6 @@ OBJ_BONUS	= $(SRC_BONUS:.c=.o)
 #  ┴└─└─┘┴─┘└─┘└─┘
 
 all: ${NAME}
-
 
 ${NAME}: ${OBJ_FILES}
 	${AR} ${NAME} ${OBJ_FILES}
