@@ -103,6 +103,7 @@ now you can use the archive by linking it at compilation of your program
 |Name|Prototype|Use|
 |-|-|-|
 |[get_next_line](src/get_next_line.c)|`char	*get_next_line(int fd, int free_static_please);`|Read a fd<br><sup>used to read lines of a file descriptor</sup>|
+
 I made a change regarding the original 42 get_next_line to be able to free the static if needed
 
 ### printf_related
@@ -121,6 +122,8 @@ I made a change regarding the original 42 get_next_line to be able to free the s
 |[ft_free_strjoin](src/ft_free_strjoin.c)|`char *ft_free_strjoin(char *s1, char *s2);`|**ft_strjoin** that frees *s1|
 |[ft_strdup_array](src/ft_strdup_array.c)|`char	 **ft_strdup_array(char **to_copy, int height);`|create a **duplicate** of an array 2d|
 |[ft_lstsplit](src/ft_lstsplit.c)|`char **ft_lstsplit(t_list *lst);`|**splits** a linked list into a 2d array|
+
+I needed this functions to manage the map and handle high scores.
 
 ### push_swap related
 |Name|Prototype|Use|
