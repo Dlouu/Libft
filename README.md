@@ -68,57 +68,42 @@ now you can use the archive by linking it at compilation of your program
 |[ft_calloc](src/ft_calloc.c)|`void	*ft_calloc(size_t nmemb, size_t size);`|**creates** a memory area **filled** with `'\0'` NULL-terminate byte|
 |[ft_strdup](src/ft_strdup.c)|`char	*ft_strdup(const char *s);`|**creates** a memory area with the string passed as a parameter|
 
-```
-A METTRE EN PAGE
-
-
 ### 42 additional functions
-|[](src/.c)|`char		*ft_substr(char const *s, unsigned int start, size_t len);`|<br><sup></sup>|
-|[](src/.c)|`char		*ft_strjoin(char const *s1, char const *s2);`|<br><sup></sup>|
-|[](src/.c)|`char		*ft_strtrim(char const *s1, char const *set);`|<br><sup></sup>|
-|[](src/.c)|`char		**ft_split(char const *s, char c);`|<br><sup></sup>|
-|[](src/.c)|`char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));`|<br><sup></sup>|
-|[](src/.c)|`void		ft_striteri(char *s, void (*f)(unsigned int, char*));`|<br><sup></sup>|
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_substr](src/ft_substr.c)|`char *ft_substr(char const *s, unsigned int start, size_t len);`|copies a string at a specific start and end|
+|[ft_strjoin](src/ft_strjoin.c)|`char *ft_strjoin(char const *s1, char const *s2);`|**joins** two strings in a new one|
+|[ft_strtrim](src/ft_strtrim.c)|`char *ft_strtrim(char const *s1, char const *set);`|**trims** a string (beginning and end)|
+|[ft_split](src/ft_split.c)|`char **ft_split(char const *s, char c);`|creates a NULL-terminated array of strings from a string separated with a given char|
+|[ft_strmapi](src/ft_strmapi.c)|`char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`|applies a function to a memory|
+|[ft_striteri](src/ft_striteri.c)|`void ft_striteri(char *s, void (*f)(unsigned int, char*));`|applies a function to a string|
 
 ### print functions
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-void		ft_putchar_fd(char c, int fd);
-void		ft_putstr_fd(char *s, int fd);
-void		ft_putendl_fd(char *s, int fd);
-void		ft_putnbr_fd(int n, int fd);
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_putchar_fd](src/ft_putchar_fd.c)|`void ft_putchar_fd(char c, int fd);`|**prints a char** in a file descriptor|
+|[ft_putstr_fd](src/ft_putstr_fd.c)|`void ft_putstr_fd(char *s, int fd);`|**prints a string** in a file descriptor|
+|[ft_putendl_fd](src/ft_putendl_fd.c)|`void ft_putendl_fd(char *s, int fd);`|**prints a string with a newline** in a file descriptor|
+|[ft_putnbr_fd](src/ft_putnbr_fd.c)|`void ft_putnbr_fd(int n, int fd);`|**prints an integer** in a file descriptor|
 
 ### linked lists functions
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-t_list		*ft_lstnew(void *content);
-void		ft_lstadd_front(t_list **lst, t_list *new);
-int			ft_lstsize(t_list *lst);
-t_list		*ft_lstlast(t_list *lst);
-void		ft_lstadd_back(t_list **lst, t_list *new);
-void		ft_lstdelone(t_list *lst, void (*del)(void *));
-void		ft_lstclear(t_list **lst, void (*del)(void *));
-void		ft_lstiter(t_list *lst, void (*f)(void *));
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_lstnew](src/ft_lstnew.c)|`t_list *ft_lstnew(void *content);`|creates a new node|
+|[ft_lstadd_front](src/ft_lstadd_front.c)|`void ft_lstadd_front(t_list **lst, t_list *new);`|adds a node to the linked list to the front|
+|[ft_lstsize](src/ft_lstsize.c)|`int ft_lstsize(t_list *lst);`|shows the **length** of a linked list|
+|[ft_lstlast](src/ft_lstlast.c)|`t_list *ft_lstlast(t_list *lst);`|jump to the last node of the linked list|
+|[ft_lstadd_back](src/ft_lstadd_back.c)|`void ft_lstadd_back(t_list **lst, t_list *new);`|adds a node to the linked list at the back|
+|[ft_lstdelone](src/ft_lstdelone.c)|`void ft_lstdelone(t_list *lst, void (*del)(void *));`|deletes a node|
+|[ft_lstclear](src/ft_lstclear.c)|`void ft_lstclear(t_list **lst, void (*del)(void *));`|deletes a linked list with a delete function<br><sup>usually I use free function</sup>|
+|[ft_lstiter](src/ft_lstiter.c)|`void ft_lstiter(t_list *lst, void (*f)(void *));`|applies a function to a linked list|
+|[ft_lstmap](src/ft_lstmap.c)|`t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`|applies a function to a malloc'ed linked list|
 
 ### get_next_line related
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
-char	*get_next_line(int fd, int free_static_please);
+|Name|Prototype|Use|
+|-|-|-|
+|[get_next_line](src/get_next_line.c)|`char	*get_next_line(int fd, int free_static_please);`|Read a fd<br><sup>used to read lines of a file descriptor</sup>|
 I made a change regarding the original 42 get_next_line to be able to free the static if needed
-```
 
 ### printf_related
 |Name|Prototype|Use|
