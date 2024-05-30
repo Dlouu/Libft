@@ -4,7 +4,7 @@ Libft is the first project of 42 cursus. I had to recreate some C function of `<
 ## How to use the library
 ```
 git clone https://github.com/Dlouu/Libft.git Libft
-cd ft_printf
+cd Libft
 make
 ```
 
