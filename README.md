@@ -70,24 +70,38 @@ now you can use the archive by linking it at compilation of your program
 
 ```
 A METTRE EN PAGE
-|[](src/.c)|``|<br><sup></sup>|
-|[](src/.c)|``|<br><sup></sup>|
+
 
 ### 42 additional functions
-char		*ft_substr(char const *s, unsigned int start, size_t len);
-char		*ft_strjoin(char const *s1, char const *s2);
-char		*ft_strtrim(char const *s1, char const *set);
-char		**ft_split(char const *s, char c);
-char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+|[](src/.c)|`char		*ft_substr(char const *s, unsigned int start, size_t len);`|<br><sup></sup>|
+|[](src/.c)|`char		*ft_strjoin(char const *s1, char const *s2);`|<br><sup></sup>|
+|[](src/.c)|`char		*ft_strtrim(char const *s1, char const *set);`|<br><sup></sup>|
+|[](src/.c)|`char		**ft_split(char const *s, char c);`|<br><sup></sup>|
+|[](src/.c)|`char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));`|<br><sup></sup>|
+|[](src/.c)|`void		ft_striteri(char *s, void (*f)(unsigned int, char*));`|<br><sup></sup>|
 
 ### print functions
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 
 ### linked lists functions
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
 int			ft_lstsize(t_list *lst);
@@ -99,22 +113,31 @@ void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 ### get_next_line related
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
+|[](src/.c)|``|<br><sup></sup>|
 char	*get_next_line(int fd, int free_static_please);
 I made a change regarding the original 42 get_next_line to be able to free the static if needed
+```
 
 ### printf_related
-void		ft_putnbr(int n);
-int			ft_putchar(char c);
-int			ft_putstr(char *s);
-int			ft_nlen_base(long long int n, int base);
-int			ft_nlen_ubase(unsigned long int n, int base);
-int			ft_putnbr_base(long long int n, char *base);
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_putnbr](src/ft_putnbr.c)|`void	 ft_putnbr(int n);`|prints an **integer**|
+|[ft_putchar](src/ft_putchar.c)|`int ft_putchar(char c);`|prints a **char**<br><sup>return value is the number of written characters</sup>|
+|[ft_putstr](src/ft_putstr.c)|`int ft_putstr(char *s);`|prints a **string**<br><sup>return value is the number of written characters</sup>|
+|[ft_nlen_base](src/ft_nlen_base.c)|`int ft_nlen_base(long long int n, int base);`|calculate the number of char need to write a number|
+|[ft_nlen_ubase](src/ft_nlen_ubase.c)|`int ft_nlen_ubase(unsigned long int n, int base);`|same for **unsigned number**|
+|[ft_putnbr_base](src/ft_putnbr_base.c)|`int ft_putnbr_base(long long int n, char *base);`|ft_putnbr that works with other bases<br><sup>`binary` `Base 10` `hexadecimal` or `custom`</sup>|
 
 ### so_long related
-char		*ft_free_strjoin(char *s1, char *s2);
-char		**ft_strdup_array(char **to_copy, int height);
-char		**ft_lstsplit(t_list *lst);
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_free_strjoin](src/ft_free_strjoin.c)|`char *ft_free_strjoin(char *s1, char *s2);`|**ft_strjoin** that frees *s1|
+|[ft_strdup_array](src/ft_strdup_array.c)|`char	 **ft_strdup_array(char **to_copy, int height);`|create a **duplicate** of an array 2d|
+|[ft_lstsplit](src/ft_lstsplit.c)|`char **ft_lstsplit(t_list *lst);`|**splits** a linked list into a 2d array|
 
 ### push_swap related
-int			ft_int_ovcheck(const char *number);
-```
+|Name|Prototype|Use|
+|-|-|-|
+|[ft_int_ovcheck](src/ft_int_ovcheck.c)|`int ft_int_ovcheck(const char *number);`|checks if an number fits in an integer|
