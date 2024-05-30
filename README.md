@@ -24,15 +24,15 @@ now you can use the archive by linking it at compilation of your program
 ### check functions
 |Name|Prototype|Use|
 |-|-|-|
-|[ft_isalpha](src/ft_isalpha.c)|`int	ft_isalpha(int c);`|checks if a character is in **alphabet**<br><sup>from `'A'` to `'Z'` and `a` to `z`</sup>|
-|[ft_isdigit](src/ft_isdigit.c)|`int	ft_isdigit(int c);`|checks if a character is a **digit**<br><sup>from `'0'` to `'9'`</sup>|
-|[ft_isalnum](src/ft_isalnum.c)|`int	ft_isalnum(int c);`|checks if a character is a **digit** or in **alphabet**<br><sup>`ft_isalpha` + `ft_isdigit`</sup>|
-|[ft_isascii](src/ft_isascii.c)|`int	ft_isascii(int c);`|checks if a character is part of the **ASCII table**<br><sup>see `man ascii`</sup>|
-|[ft_isprint](src/ft_isprint.c)|`int	ft_isprint(int c);`|checks if a character is **printable**|
-|[ft_isblank](src/ft_isblank.c)|`int	ft_isblank(int c);`|checks if a character is a **blank space**<br><sup>`' '` or `'\t'`</sup>|
-|[ft_issign](src/ft_issign.c)|`int	ft_issign(int c);`|checks if a character is a **sign**<br><sup>`'+'` `'-'` `'/'` `'%'`</sup>|
-|[ft_isspace](src/ft_isspace.c)|`int	ft_isspace(int c);`|checks if a character is a **whitespace**<br><sup>space `' '` form-feed `'\f'` newline `'\n'` carriage-return `'\r'` horizontal-tab `'\t'` vertical-tab `'\v'`</sup>|
-|[ft_ispunct](src/ft_ispunct.c)|`int	ft_ispunct(int c);`|checks if a character is a **punctuation sign**<br><sup>`` ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] \ ^ _ ` { } ~``</sup>|
+|[ft_isalpha](src/ft_isalpha.c)|`int ft_isalpha(int c);`|checks if a character is in **alphabet**<br><sup>from `'A'` to `'Z'` and `a` to `z`</sup>|
+|[ft_isdigit](src/ft_isdigit.c)|`int ft_isdigit(int c);`|checks if a character is a **digit**<br><sup>from `'0'` to `'9'`</sup>|
+|[ft_isalnum](src/ft_isalnum.c)|`int ft_isalnum(int c);`|checks if a character is a **digit** or in **alphabet**<br><sup>`ft_isalpha` + `ft_isdigit`</sup>|
+|[ft_isascii](src/ft_isascii.c)|`int ft_isascii(int c);`|checks if a character is part of the **ASCII table**<br><sup>see `man ascii`</sup>|
+|[ft_isprint](src/ft_isprint.c)|`int ft_isprint(int c);`|checks if a character is **printable**|
+|[ft_isblank](src/ft_isblank.c)|`int ft_isblank(int c);`|checks if a character is a **blank space**<br><sup>`' '` or `'\t'`</sup>|
+|[ft_issign](src/ft_issign.c)|`int ft_issign(int c);`|checks if a character is a **sign**<br><sup>`'+'` `'-'` `'/'` `'%'`</sup>|
+|[ft_isspace](src/ft_isspace.c)|`int ft_isspace(int c);`|checks if a character is a **whitespace**<br><sup>space `' '` form-feed `'\f'` newline `'\n'` carriage-return `'\r'` horizontal-tab `'\t'` vertical-tab `'\v'`</sup>|
+|[ft_ispunct](src/ft_ispunct.c)|`int ft_ispunct(int c);`|checks if a character is a **punctuation sign**<br><sup>`` ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] \ ^ _ ` { } ~``</sup>|
 * the return value is 1 if the character fits or 0 if it doesn't.
 
 ### convert functions
