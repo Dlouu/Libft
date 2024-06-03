@@ -41,7 +41,7 @@ now you can use the archive by linking it at compilation of your program
 |[ft_toupper](src/ft_toupper.c)|`int ft_toupper(int c);`|converts a character to **uppercase**|
 |[ft_tolower](src/ft_tolower.c)|`int ft_tolower(int c);`|converts a character to **lowercase**|
 |[ft_atoi](src/ft_atoi.c)|`int ft_atoi(const char *nptr);`|converts a string to an **integer**<br><sup>from `-2,147,483,648` to `2,147,483,647`</sup>|
-|[ft_atol](src/ft_atol.c)|`long int	ft_atol(const char *nptr);`|converts a string to a **long integer**<br><sup>from `-4,294,967,296` to `4,294,967,295`</sup>|
+|[ft_atol](src/ft_atol.c)|`long int ft_atol(const char *nptr);`|converts a string to a **long integer**<br><sup>from `-4,294,967,296` to `4,294,967,295`</sup>|
 |[ft_itoa](src/ft_itoa.c)|`char *ft_itoa(int n);`|converts an integer to a **string**|
 |[ft_abs](src/ft_abs.c)|`int ft_abs(int n);`|converts a value to it's `absolute` value<br><sup>ex : `-42` converts to `42`</sup>|
 
@@ -109,7 +109,7 @@ I made a change regarding the original 42 get_next_line to be able to free the s
 ### printf_related
 |Name|Prototype|Use|
 |-|-|-|
-|[ft_putnbr](src/ft_putnbr.c)|`void	 ft_putnbr(int n);`|prints an **integer**|
+|[ft_putnbr](src/ft_putnbr.c)|`void ft_putnbr(int n);`|prints an **integer**|
 |[ft_putchar](src/ft_putchar.c)|`int ft_putchar(char c);`|prints a **char**<br><sup>return value is the number of written characters</sup>|
 |[ft_putstr](src/ft_putstr.c)|`int ft_putstr(char *s);`|prints a **string**<br><sup>return value is the number of written characters</sup>|
 |[ft_nlen_base](src/ft_nlen_base.c)|`int ft_nlen_base(long long int n, int base);`|calculate the number of char need to write a number|
