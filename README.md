@@ -38,35 +38,35 @@ now you can use the archive by linking it at compilation of your program
 ### convert functions
 |Name|Prototype|Use|
 |-|-|-|
-|[ft_toupper](src/ft_toupper.c)|`int	ft_toupper(int c);`|converts a character to **uppercase**|
-|[ft_tolower](src/ft_tolower.c)|`int	ft_tolower(int c);`|converts a character to **lowercase**|
-|[ft_atoi](src/ft_atoi.c)|`int	ft_atoi(const char *nptr);`|converts a string to an **integer**<br><sup>from `-2,147,483,648` to `2,147,483,647`</sup>|
+|[ft_toupper](src/ft_toupper.c)|`int ft_toupper(int c);`|converts a character to **uppercase**|
+|[ft_tolower](src/ft_tolower.c)|`int ft_tolower(int c);`|converts a character to **lowercase**|
+|[ft_atoi](src/ft_atoi.c)|`int ft_atoi(const char *nptr);`|converts a string to an **integer**<br><sup>from `-2,147,483,648` to `2,147,483,647`</sup>|
 |[ft_atol](src/ft_atol.c)|`long int	ft_atol(const char *nptr);`|converts a string to a **long integer**<br><sup>from `-4,294,967,296` to `4,294,967,295`</sup>|
-|[ft_itoa](src/ft_itoa.c)|`char	*ft_itoa(int n);`|converts an integer to a **string**|
-|[ft_abs](src/ft_abs.c)|`int	ft_abs(int n);`|converts a value to it's `absolute` value<br><sup>ex : `-42` converts to `42`</sup>|
+|[ft_itoa](src/ft_itoa.c)|`char *ft_itoa(int n);`|converts an integer to a **string**|
+|[ft_abs](src/ft_abs.c)|`int ft_abs(int n);`|converts a value to it's `absolute` value<br><sup>ex : `-42` converts to `42`</sup>|
 
 ### string operations functions
 |Name|Prototype|Use|
 |-|-|-|
-|[ft_strlen](src/ft_strlen.c)|`size_t	ft_strlen(const char *s);`|checks for the **length** of a string|
-|[ft_strlcpy](src/ft_strlcpy.c)|`size_t	ft_strlcpy(char *dst, const char *src, size_t size);`|**copies** a string of a specific size|
-|[ft_strlcat](src/ft_strlcat.c)|`size_t	ft_strlcat(char *dst, const char *src, size_t size);`|**concatenates** a string of a specific size|
-|[ft_strchr](src/ft_strchr.c)|`char	*ft_strchr(const char *s, int c);`|**finds** a character in a string<br><sup>return it's pointer</sup>|
-|[ft_strrchr](src/ft_strrchr.c)|`char	*ft_strrchr(const char *s, int c);`|same as **strchr** but in reverse|
-|[ft_strncmp](src/ft_strncmp.c)|`int	ft_strncmp(const char *s1, const char *s2, size_t n);`|**compares** two strings<br><sup>for n characters</sup>|
-|[ft_strnstr](src/ft_strnstr.c)|`char	*ft_strnstr(const char *big, const char *little, size_t len);`|**finds** a substring in a string<br><sup>returns it's pointer or `NULL`</sup>|
+|[ft_strlen](src/ft_strlen.c)|`size_t ft_strlen(const char *s);`|checks for the **length** of a string|
+|[ft_strlcpy](src/ft_strlcpy.c)|`size_t ft_strlcpy(char *dst, const char *src, size_t size);`|**copies** a string of a specific size|
+|[ft_strlcat](src/ft_strlcat.c)|`size_t ft_strlcat(char *dst, const char *src, size_t size);`|**concatenates** a string of a specific size|
+|[ft_strchr](src/ft_strchr.c)|`char *ft_strchr(const char *s, int c);`|**finds** a character in a string<br><sup>return it's pointer</sup>|
+|[ft_strrchr](src/ft_strrchr.c)|`char *ft_strrchr(const char *s, int c);`|same as **strchr** but in reverse|
+|[ft_strncmp](src/ft_strncmp.c)|`int ft_strncmp(const char *s1, const char *s2, size_t n);`|**compares** two strings<br><sup>for n characters</sup>|
+|[ft_strnstr](src/ft_strnstr.c)|`char *ft_strnstr(const char *big, const char *little, size_t len);`|**finds** a substring in a string<br><sup>returns it's pointer or `NULL`</sup>|
 
 ### memory operations functions
 |Name|Prototype|Use|
 |-|-|-|
-|[ft_memset](src/ft_memset.c)|`void	*ft_memset(void *s, int c, size_t n);`|**fills memory** with a given character<br><sup></sup>|
-|[ft_bzero](src/ft_bzero.c)|`void	ft_bzero(void *s, size_t n);`|**fills memory** with `'\0'` NULL-terminate byte|
-|[ft_memcpy](src/ft_memcpy.c)|`void	*ft_memcpy(void *dest, const void *src, size_t n);`|**copies** n characters of a string in a memory area|
-|[ft_memmove](src/ft_memmove.c)|`void	*ft_memmove(void *dest, const void *src, size_t n);`|same as `memmove` even when overlapping|
-|[ft_memchr](src/ft_memchr.c)|`void	*ft_memchr(const void *s, int c, size_t n);`|**checks** for a character in a memory area<br><sup>returns the character or `NULL`</sup>|
-|[ft_memcmp](src/ft_memcmp.c)|`int	ft_memcmp(const void *s1, const void *s2, size_t n);`|**compares** memory areas<br><sup></sup>|
-|[ft_calloc](src/ft_calloc.c)|`void	*ft_calloc(size_t nmemb, size_t size);`|**creates** a memory area **filled** with `'\0'` NULL-terminate byte|
-|[ft_strdup](src/ft_strdup.c)|`char	*ft_strdup(const char *s);`|**creates** a memory area with the string passed as a parameter|
+|[ft_memset](src/ft_memset.c)|`void *ft_memset(void *s, int c, size_t n);`|**fills memory** with a given character<br><sup></sup>|
+|[ft_bzero](src/ft_bzero.c)|`void ft_bzero(void *s, size_t n);`|**fills memory** with `'\0'` NULL-terminate byte|
+|[ft_memcpy](src/ft_memcpy.c)|`void *ft_memcpy(void *dest, const void *src, size_t n);`|**copies** n characters of a string in a memory area|
+|[ft_memmove](src/ft_memmove.c)|`void *ft_memmove(void *dest, const void *src, size_t n);`|same as `memcpy` even when memory overlaps|
+|[ft_memchr](src/ft_memchr.c)|`void *ft_memchr(const void *s, int c, size_t n);`|**checks** for a character in a memory area<br><sup>returns the character or `NULL`</sup>|
+|[ft_memcmp](src/ft_memcmp.c)|`int ft_memcmp(const void *s1, const void *s2, size_t n);`|**compares** memory areas<br><sup></sup>|
+|[ft_calloc](src/ft_calloc.c)|`void *ft_calloc(size_t nmemb, size_t size);`|**creates** a memory area **filled** with `'\0'` NULL-terminate byte|
+|[ft_strdup](src/ft_strdup.c)|`char *ft_strdup(const char *s);`|**creates** a memory area with the string passed as a parameter|
 
 ### 42 additional functions
 |Name|Prototype|Use|
@@ -102,7 +102,7 @@ now you can use the archive by linking it at compilation of your program
 ### get_next_line related
 |Name|Prototype|Use|
 |-|-|-|
-|[get_next_line](src/get_next_line.c)|`char	*get_next_line(int fd, int free_static_please);`|Read a fd<br><sup>used to read lines of a file descriptor</sup>|
+|[get_next_line](src/get_next_line.c)|`char *get_next_line(int fd, int free_static_please);`|Read a fd<br><sup>used to read lines of a file descriptor</sup>|
 
 I made a change regarding the original 42 get_next_line to be able to free the static if needed
 
@@ -120,7 +120,7 @@ I made a change regarding the original 42 get_next_line to be able to free the s
 |Name|Prototype|Use|
 |-|-|-|
 |[ft_free_strjoin](src/ft_free_strjoin.c)|`char *ft_free_strjoin(char *s1, char *s2);`|**ft_strjoin** that frees *s1|
-|[ft_strdup_array](src/ft_strdup_array.c)|`char	 **ft_strdup_array(char **to_copy, int height);`|create a **duplicate** of an array 2d|
+|[ft_strdup_array](src/ft_strdup_array.c)|`char **ft_strdup_array(char **to_copy, int height);`|create a **duplicate** of an array 2d|
 |[ft_lstsplit](src/ft_lstsplit.c)|`char **ft_lstsplit(t_list *lst);`|**splits** a linked list into a 2d array|
 
 I needed this functions to manage the map and handle high scores.
