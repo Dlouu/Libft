@@ -10,7 +10,7 @@ make
 
 now you can use the archive by linking it at compilation of your program
 ```
--L <directory_of_libft> -lft
+-L <libft_directory> -lft
 ```
 
 ## Makefile rules
